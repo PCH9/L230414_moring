@@ -1,12 +1,11 @@
 #pragma once
-#include "Character.h"
 #include <iostream>
 
-class Inventory : public Character
+class Inventory
 {
 public:
 	Inventory(class Item* Resource);
-	virtual ~Inventory() override;
+	virtual ~Inventory();
 	inline std::string GetName() const { return Name; }
 
 protected:
